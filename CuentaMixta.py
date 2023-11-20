@@ -1,8 +1,8 @@
-from cuentaAhorro import CuentaAhorros
-from cuentaCorriente import CuentaCorriente
+from CUENTAAHORRO import CUENTAAHORRO
+from CUENTACORRIENTE import CUENTACORRIENTE
 
 
-class CuentaMixta(CuentaAhorros, CuentaCorriente):
+class CuentaMixta(CUENTAAHORRO, CUENTACORRIENTE):
     def __init__(self, numero, nombre_propietario, saldo, interes, tieneChequera, limite:float=None, bono:float=None):
         CuentaAhorros.__init__(self, numero, nombre_propietario, saldo, interes)
         CuentaCorriente.__init__(self, numero, nombre_propietario, saldo, tieneChequera)
